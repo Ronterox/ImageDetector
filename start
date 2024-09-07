@@ -1,0 +1,6 @@
+#!/bin/env bash
+
+tmux-send-cmd 'Server' 'live-server .'
+tmux-send-cmd 'Recompile' 'bun build *.ts --outdir=dist --watch'
+
+nvim .
