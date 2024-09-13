@@ -8,10 +8,7 @@
     <title>Data Creator</title>
 </head>
 
-<body>
-    <header>
-        <h1>Draw Something</h1>
-    </header>
+<template id="draw">
     <div>
         <p id="label">Currently drawing...</p>
         <canvas id="canvas"></canvas>
@@ -21,6 +18,18 @@
         <button id="clear">Clear</button>
         <button id="undo">Undo</button>
     </div>
-    <script src="dist/index.js"></script>
+    <script src="dist/draw.js"></script>
+</template>
 
+<template id="login">
+    <input type="text" id="username"/>
+    <button id="start">Start</button>
+</template>
+
+<body>
+    <header>
+        <h1>Draw Something</h1>
+    </header>
+    <main id="main"></main>
+    <script src="dist/index.js"></script>
 </html>
